@@ -16,13 +16,14 @@ function welcome(){
 
   if (welcomeUser) {
     userWelcomed.innerHTML = welcomeUser;
-
   }else{
-    h1.innerText = "Welcome Lovely";
+   // userWelcomed.style.display = "none";
   }
-
-
-
 };
 
+function clearInput() {
+  const welcomeUser = localStorage.clear();
+  userWelcomed.innerHTML = null;
+
+};
 
