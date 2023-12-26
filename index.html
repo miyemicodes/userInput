@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Personalized greeting App</title>
+  </head>
+  <body
+    onload="welcome()"
+    class="flex items-center justify-center w-full h-screen font-mono bg-gradient-to-r from-[#f8dfd4] to-[#c69774]"
+  >
+    <div class="container flex flex-col justify-center items-center gap-6">
+      <div>
+        <h1 class="welcome-text">
+          Welcome Back <span class="user-welcome"></span>
+        </h1>
+      </div>
+      <fieldset class="fieldset">
+        <label for="Username">Username</label>
+        <input type="text" id="Uname" name="Username" />
+      </fieldset>
+
+      <button id="btn" class="bg-blue-500">Save</button>
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
