@@ -17,13 +17,12 @@ function welcome(){
   if (welcomeUser) {
     userWelcomed.innerHTML = welcomeUser;
   }else{
-   // userWelcomed.style.display = "none";
+    userWelcomed.innerHTML = null;
   }
 };
 
 function clearInput() {
   const welcomeUser = localStorage.clear();
-  userWelcomed.innerHTML = null;
 
 };
 

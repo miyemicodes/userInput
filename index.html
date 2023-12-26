@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
 
@@ -18,22 +18,31 @@
   </head>
   <body
     onload="welcome()"
-    class="flex items-center justify-center w-full h-screen font-mono bg-gradient-to-r from-[#f8dfd4] to-[#c69774]"
+    class="flex items-center justify-center w-full h-screen font-[Montserrat] bg-black"
+    bg-pink-900
+    bg-pink-400
   >
     <div class="container flex flex-col justify-center items-center gap-6">
-      <div>
-        <h1 class="welcome-text">
-          Welcome Back <span class="user-welcome"></span>
-        </h1>
-      </div>
-      <fieldset class="fieldset">
-        <label for="Username">Username</label>
-        <input type="text" id="Uname" name="Username" />
-      </fieldset>
+      <h1 class="text-5xl text-pink-600">
+        Welcome Back <span class="user-welcome"></span>
+      </h1>
 
-      <div>
+      <div class="fieldset px-12 py-10 border-2 rounded-xl">
+        <label for="Username class" class="text-pink-600"> Username :</label>
+        <input
+          type="text"
+          id="Uname"
+          name="Username"
+          placeholder="Enter Username"
+          class="px-2 py-3 text-pink-600 bg-gray-600 bg-opacity-0 border-b-2 border-pink-600 outline-none"
+        />
+      </div>
+
+      <div class="flex items-center justify-center gap-4">
         <button id="btn" class="bg-blue-500">Save</button>
-        <button id="btn" class="bg-blue-500" onclick="clearInput()">Clear</button>
+        <button id="btn" class="bg-blue-500" onclick="clearInput()">
+          Clear
+        </button>
       </div>
     </div>
 
