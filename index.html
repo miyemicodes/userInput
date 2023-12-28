@@ -18,29 +18,29 @@
   </head>
   <body
     onload="welcome()"
-    class="flex items-center justify-center w-full h-screen font-[Montserrat] "
+    class="flex items-center justify-center w-full h-screen font-[Montserrat] bg-gradient-to-r from-[#86a789] to-[#4f6f52] "
     
   >
-    <div class="container flex flex-col justify-center items-center gap-6">
-      <h1 class="text-5xl text-[tomato]" >
+    <div class="container flex flex-col justify-center items-center gap-6 ">
+      <h1 class="text-5xl text-[#d2e3c8]" >
          <span class="user-welcome"></span>
       </h1>
 
-      <div class=" flex flex-col px-10 py-5 border-2 rounded-xl shadow-lg">
+      <div class=" flex flex-col px-10 py-5 border-2 border-[#739072] rounded-xl shadow-lg">
         <div class=" flex flex-col p-10">
-          <label for="Username class" class="text-[tomato]"> Username </label>
+          <label for="Username class" class="text-[#d2e3c8]"> Username </label>
           <input
             type="text"
             id="Uname"
             name="Username"
             placeholder="Enter Username"
-            class="px-2 py-3 text-[tomato] bg-gray-600 bg-opacity-0 border-2 rounded-xl border-[tomato] outline-none"
+            class="px-2 py-3 text-[#d2e3c8] bg-gray-600 bg-opacity-0 border-2 rounded-xl border-[#d2e3c8] outline-none"
           />
         </div>
   
         <div class="flex items-center justify-center gap-4 w-full">
-          <button id="btn" class="w-full bg-[tomato] text-white px-5 py-2 border-2 rounded-xl ">Save</button>
-          <button id="btn" class="w-full bg-[tomato] text-white px-5 py-2 border-2 rounded-xl " onclick="clearInput()">
+          <button id="btn" class="w-full bg-[#739072] text-white px-5 py-2 border-2 rounded-xl  hover:bg-[#d2e3c8] hover:text-[#4f6f52]">Save</button>
+          <button id="btn" class="w-full bg-[#739072] text-white px-5 py-2 border-2 rounded-xl hover:bg-[#d2e3c8] hover:text-[#4f6f52]" onclick="clearInput()">
             Clear
           </button>
         </div>
