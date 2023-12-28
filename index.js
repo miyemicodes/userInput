@@ -4,7 +4,7 @@ const userWelcomed = document.querySelector("span");
 
 function constructWelcomeText(v) {
 
-  return v ? `Hi ${v} Nice Meeting You`: 'Can I Know You ?'
+  return v ? `Hi ${v} Nice Meeting You`: 'Can I Know You ?';
 
 };
 
