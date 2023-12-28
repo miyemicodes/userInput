@@ -2,27 +2,34 @@ const inputValue = document.querySelector("#Uname");
 const saveBtn = document.querySelector("Button");
 const userWelcomed = document.querySelector("span");
 
+function constructWelcomeText(v) {
+
+  return v ? `Hi ${v} Nice Meeting You`: 'Can I Know You ?'
+
+};
+
 saveBtn.addEventListener("click", (e) =>{
    
   const textValue = inputValue.value;
   console.log(textValue);
 
-   inputValue = localStorage.setItem("name", textValue);
+   localStorage.setItem("name", textValue);
+   userWelcomed.innerHTML = constructWelcomeText(textValue);
+   inputValue.value = "";
+
   // console.log(saveBtn);
 });
+
 
 function welcome(){
   const welcomeUser = localStorage.getItem("name");
 
-  if (welcomeUser) {
-    userWelcomed.innerHTML = welcomeUser;
-  }else{
-    userWelcomed.innerHTML = null;
-  }
+  userWelcomed.innerHTML = constructWelcomeText(welcomeUser);
 };
 
 function clearInput() {
-  const welcomeUser = localStorage.clear();
-
+  localStorage.clear();
+  userWelcomed.innerHTML = constructWelcomeText(null);
+  inputValue.value = "";
 };
 
